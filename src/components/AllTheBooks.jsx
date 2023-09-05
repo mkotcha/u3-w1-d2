@@ -32,16 +32,16 @@ const AllTheBooks = props => {
     <Container>
       <Row xs={2} md={3} lg={4} xl={5} xxl={6} className="g-4">
         {category.map((book, index) => (
-          <Col key={`book-${index}`}>
+          <Col key={book.asin}>
             <Card className="h-100">
               <Card.Img variant="top" src={book.img} />
               <Card.Body className="d-flex flex-column">
                 <Card.Title className="mb-auto">{book.title}</Card.Title>
                 <Card.Text className="d-flex mt-2">
-                  <span className="me-auto">price: </span> <span class="text-end">€ {book.price} </span>
+                  <span className="me-auto">price: </span> <span>€ {book.price} </span>
                 </Card.Text>
                 <Button variant="success">
-                  add to cart <i class="bi bi-cart-plus"></i>
+                  add to cart <i className="bi bi-cart-plus"></i>
                 </Button>
               </Card.Body>
               <Card.Footer>

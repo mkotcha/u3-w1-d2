@@ -1,5 +1,4 @@
-import { Container, Button, Dropdown } from "react-bootstrap";
-import AllTheBooksClass from "./AllTheBooksClass";
+import { Container, Dropdown } from "react-bootstrap";
 
 const Jumbo = props => {
   return (
