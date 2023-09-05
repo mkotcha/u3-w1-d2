@@ -1,5 +1,5 @@
 import "./App.css";
-import AllTheBooks from "./components/AllTheBooks";
+import AllTheBooksClass from "./components/AllTheBooksClass";
 import Jumbo from "./components/Jumbo";
 import MyFooter from "./components/MyFooter";
 import MyNav from "./components/MyNav";
@@ -8,8 +8,7 @@ function App() {
   return (
     <>
       <MyNav />
-      <Jumbo />
-      <AllTheBooks />
+      <AllTheBooksClass />
       <MyFooter />
     </>
   );
