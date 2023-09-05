@@ -18,19 +18,19 @@ const Jumbo = props => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1" onClick={() => props.cls.setState({ category: "fantasy" })}>
+              <Dropdown.Item href="#/action-1" onClick={() => props.classIstance.setState({ category: "fantasy" })}>
                 fantasy
               </Dropdown.Item>
-              <Dropdown.Item href="#/action-2" onClick={() => props.cls.setState({ category: "history" })}>
+              <Dropdown.Item href="#/action-2" onClick={() => props.classIstance.setState({ category: "history" })}>
                 history
               </Dropdown.Item>
-              <Dropdown.Item href="#/action-3" onClick={() => props.cls.setState({ category: "horror" })}>
+              <Dropdown.Item href="#/action-3" onClick={() => props.classIstance.setState({ category: "horror" })}>
                 horror
               </Dropdown.Item>
-              <Dropdown.Item href="#/action-3" onClick={() => props.cls.setState({ category: "romance" })}>
+              <Dropdown.Item href="#/action-3" onClick={() => props.classIstance.setState({ category: "romance" })}>
                 romance
               </Dropdown.Item>
-              <Dropdown.Item href="#/action-3" onClick={() => props.cls.setState({ category: "scifi" })}>
+              <Dropdown.Item href="#/action-3" onClick={() => props.classIstance.setState({ category: "scifi" })}>
                 scifi
               </Dropdown.Item>
             </Dropdown.Menu>

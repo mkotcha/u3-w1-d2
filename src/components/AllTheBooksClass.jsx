@@ -11,7 +11,7 @@ class AllTheBooksClass extends Component {
   render() {
     return (
       <>
-        <Jumbo cls={this} />
+        <Jumbo classIstance={this} />
 
         <AllTheBooks category={this.state.category} />
       </>
