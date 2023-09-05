@@ -25,6 +25,7 @@ const AllTheBooks = props => {
       break;
 
     default:
+      category = [...fantasy, ...history, ...horror, ...romance, ...scifi];
       break;
   }
 

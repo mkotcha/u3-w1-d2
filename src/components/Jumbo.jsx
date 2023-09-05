@@ -32,6 +32,9 @@ const Jumbo = props => {
               <Dropdown.Item href="#/action-3" onClick={() => props.classIstance.setState({ category: "scifi" })}>
                 scifi
               </Dropdown.Item>
+              <Dropdown.Item href="#/action-3" onClick={() => props.classIstance.setState({ category: "all" })}>
+                all
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </Container>
