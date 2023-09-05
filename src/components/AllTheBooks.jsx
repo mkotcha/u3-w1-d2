@@ -37,7 +37,12 @@ const AllTheBooks = props => {
               <Card.Img variant="top" src={book.img} />
               <Card.Body className="d-flex flex-column">
                 <Card.Title className="mb-auto">{book.title}</Card.Title>
-                <Button variant="success">buy</Button>
+                <Card.Text className="d-flex mt-2">
+                  <span className="me-auto">price: </span> <span class="text-end">€ {book.price} </span>
+                </Card.Text>
+                <Button variant="success">
+                  add to cart <i class="bi bi-cart-plus"></i>
+                </Button>
               </Card.Body>
               <Card.Footer>
                 <small className="text-muted">category: {book.category}</small>
