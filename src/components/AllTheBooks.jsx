@@ -7,7 +7,6 @@ import scifi from "../data/scifi.json";
 let category = null;
 
 const AllTheBooks = props => {
-  console.log("props ", props);
   switch (props.category) {
     case "fantasy":
       category = fantasy;
@@ -28,6 +27,7 @@ const AllTheBooks = props => {
     default:
       break;
   }
+
   return (
     <Container>
       <Row xs={2} md={3} lg={4} xl={5} xxl={6} className="g-4">

@@ -11,10 +11,10 @@ class AllTheBooksClass extends Component {
     return (
       <>
         <Jumbo classIstance={this} />
-
         <AllTheBooks category={this.state.category} />
       </>
     );
   }
 }
+
 export default AllTheBooksClass;
