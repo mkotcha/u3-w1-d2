@@ -14,7 +14,7 @@ const AllTheBooks = () => {
                 <Button variant="success">buy</Button>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">{book.category}</small>
+                <small className="text-muted">category: {book.category}</small>
               </Card.Footer>
             </Card>
           </Col>
