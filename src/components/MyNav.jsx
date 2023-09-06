@@ -4,7 +4,7 @@ const MyNav = props => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">EpiBooks</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -18,6 +18,7 @@ const MyNav = props => {
               placeholder={props.classIstance.state.filter}
               className="me-2"
               aria-label="Search"
+              id="filter"
               onChange={event => props.classIstance.setState({ filter: event.target.value })}
             />
             <Button variant="outline-success" type="submit">

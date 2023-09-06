@@ -18,6 +18,7 @@ class EpiBooks extends Component {
 
   filter = event => {
     event.preventDefault();
+    this.setState({ filter: event.target.filter.value });
   };
 
   render() {
@@ -43,8 +44,7 @@ class EpiBooks extends Component {
         break;
     }
 
-    if (this.state.filter.length > 2)
-      categoryArr = categoryArr.filter(elm => elm.title.toLowerCase().includes(this.state.filter.toLowerCase()) >= 1);
+    categoryArr = categoryArr.filter(elm => elm.title.toLowerCase().includes(this.state.filter.toLowerCase()) >= 1);
 
     return (
       <>
