@@ -1,13 +1,11 @@
 import "./App.css";
-import AllTheBooksClass from "./components/AllTheBooksClass";
+import EpiBooks from "./components/EpiBooks";
 import MyFooter from "./components/MyFooter";
-import MyNav from "./components/MyNav";
 
 function App() {
   return (
     <>
-      <MyNav />
-      <AllTheBooksClass />
+      <EpiBooks />
       <MyFooter />
     </>
   );

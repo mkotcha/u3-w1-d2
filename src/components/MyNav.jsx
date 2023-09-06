@@ -1,6 +1,6 @@
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, Form, Button } from "react-bootstrap";
 
-const MyNav = () => {
+const MyNav = props => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -12,6 +12,18 @@ const MyNav = () => {
             <Nav.Link href="#">About</Nav.Link>
             <Nav.Link href="#">Browse</Nav.Link>
           </Nav>
+          <Form className="d-flex" onSubmit={event => props.classIstance.filter(event)}>
+            <Form.Control
+              type="search"
+              placeholder={props.classIstance.state.filter}
+              className="me-2"
+              aria-label="Search"
+              onChange={event => props.classIstance.setState({ filter: event.target.value })}
+            />
+            <Button variant="outline-success" type="submit">
+              Search
+            </Button>
+          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
